@@ -1,0 +1,353 @@
+/* Global Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #e0e0e0, #c8c8c8);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Added navbar styles (only this section is new) */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+
+header {
+    top: 65px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.container {
+    padding-top: 110px;
+}
+
+/* ALL OTHER EXISTING STYLES REMAIN EXACTLY THE SAME */
+header {
+    background: linear-gradient(135deg, #e0e0e0,#cf8282 );
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: maroon;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-item .description {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    transition: bottom 0.3s ease;
+}
+
+.gallery-item:hover .description {
+    bottom: 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: right;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+h2 {
+    color: #444;
+    font-size: 2em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.section-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button.childhood {
+    background-color: navy;
+}
+
+.nav-button.teenage {
+    background-color: navy;
+}
+
+.nav-button.college {
+    background-color: navy;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, maroon, transparent);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: right;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.footer-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #444;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav li {
+    display: inline-block;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px 15px;
+    position: relative;
+    border-radius: 0;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Make all interactive states identical */
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: #777;
+    color: white;
+    font-size: 16px;
+    padding: 14px 15px;
+    transform: none;
+}
+
+nav li:last-child a {
+    border-right: none;
+}
+
+nav a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Original Section Nav Styles */
+.section-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.section-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button.childhood, 
+.nav-button.teenage, 
+.nav-button.college {
+    background-color: navy;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .nav-container {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+}

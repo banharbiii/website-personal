@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PARIS, FRANCE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f0e6d2;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .expedition-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+        }
+        .expedition-visuals {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+                        url('https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .expedition-details {
+            padding: 50px;
+            background-color: #f0e6d2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .destination-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .destination-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 4px;
+            background-color: #e74c3c;
+        }
+        .motivation-section {
+            background-color: #ffffff;
+            border-left: 5px solid #e74c3c;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        .experience-list {
+            list-style-type: none;
+        }
+        .experience-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+        .experience-item::before {
+            content: '➤';
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+        }
+        .footer {
+            display: inline-block;
+            text-decoration: none;
+            color: #2c3e50;
+            border: 2px solid #2c3e50;
+            padding: 10px 20px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: grayscale(30%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+        .image-link {
+            display: block;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="expedition-container">
+        <div class="expedition-visuals"></div>
+        <div class="expedition-details">
+            <h1 class="destination-title">Paris, France</h1>
+            
+            <div class="motivation-section">
+                <p>I want to visit Paris for its timeless elegance, iconic landmarks, and vibrant café culture. From the Eiffel Tower to Montmartre's artistic charm, every corner tells a story.</p>
+            </div>
+
+            <h2>How to Travel to Paris, France</h2>
+            <ul class="experience-list">
+                <li class="experience-item"><strong>Flight:</strong> Book a flight from Manila (MNL) to Paris Charles de Gaulle (CDG) with layovers in Dubai, Doha, or Singapore (approx. 16-20 hours).</li>
+            </ul>
+
+            <div class="image-gallery">
+                <a href="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" class="image-link" target="Newspace" rel="noopener noreferrer">
+                    <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Eiffel Tower" class="gallery-image">
+                </a>
+                <a href="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" class="image-link" target="Newspace" rel="noopener noreferrer">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Louvre Museum" class="gallery-image">
+                </a>
+                <a href="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" class="image-link" target="Newspace" rel="noopener noreferrer">
+                    <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Seine River" class="gallery-image">
+                </a>
+            </div>
+
+            <div class="footer">
+                <a href="#top" class="footer-button">Go Top</a>
+                <a href="Places.html" class="back-link">Return</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

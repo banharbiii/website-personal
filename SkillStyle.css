@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #e0e0e0, #c8c8c8);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: maroon;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Remove default margin */
+}
+
+h2 {
+    color: #444;
+    font-size: 2em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Container - Now Sticky */
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #444;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 0; /* Ensure no margin above */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav li {
+    display: inline-block;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px 15px;
+    position: relative;
+    border-radius: 0;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%; /* Prevent text size changes */
+}
+
+/* Make all interactive states identical */
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: #777;
+    color: white;
+    font-size: 16px;
+    padding: 14px 15px;
+    transform: none;
+}
+
+nav li:last-child a {
+    border-right: none;
+}
+
+nav a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Section Navigation Styles (Original) */
+.section-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.section-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button.skills,
+.nav-button.hobbies,
+.nav-button.interests {
+    background-color: navy;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Divider Styles */
+.divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, maroon, transparent);
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Content Styles */
+.content {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.footer-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    /* Straight line nav mobile adjustments */
+    nav ul {
+        justify-content: flex-start;
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    
+    nav li {
+        width: 100%;
+    }
+    
+    nav a {
+        padding: 12px 10px;
+        font-size: 14px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    /* Consistent mobile active states */
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+    
+    /* Original section nav adjustments */
+    .section-nav ul {
+        flex-direction: column;
+    }
+    
+    .section-nav li {
+        margin: 5px 0;
+    }
+    
+    .nav-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav li {
+        flex: 0 0 50%;
+    }
+}
