@@ -24,7 +24,7 @@ h1 {
     font-size: 2.5em;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 0;
+    margin-top: 80px;
 }
 
 h2 {
@@ -74,7 +74,7 @@ nav a {
     padding: 14px 15px;
     position: relative;
     border-radius: 0;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     border-right: 1px solid rgba(255,255,255,0.2);
@@ -88,8 +88,6 @@ nav a:focus,
 nav a:active {
     background-color: #777;
     color: white;
-    font-size: 16px;
-    padding: 14px 15px;
     transform: none;
 }
 
@@ -102,16 +100,25 @@ nav a i {
     font-size: 1.2em;
 }
 
-/* Original Section Nav Styles */
+/* Section Navigation Styles - Fixed */
+.section-nav {
+    margin: 20px 0;
+}
+
 .section-nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .section-nav li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin: 0;
 }
 
 .nav-button {
@@ -122,7 +129,12 @@ nav a i {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
+    background-color: navy;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .nav-button.childhood, 
@@ -134,6 +146,7 @@ nav a i {
 .nav-button:hover {
     transform: scale(1.05);
     opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Divider Styles */
@@ -157,10 +170,13 @@ nav a i {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Footer Styles */
+/* Footer Styles - Fixed */
 .footer {
     margin-top: 30px;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .footer-button {
@@ -172,13 +188,15 @@ nav a i {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-right: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .footer-button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive adjustments */
@@ -191,7 +209,7 @@ nav a i {
         font-size: 20px;
     }
     
-    /* Straight line nav mobile adjustments */
+    /* Navigation adjustments */
     nav ul {
         justify-content: flex-start;
         padding: 0 10px;
@@ -209,25 +227,34 @@ nav a i {
         border-bottom: 1px solid rgba(255,255,255,0.2);
     }
     
-    /* Consistent mobile active states */
-    nav a:hover,
-    nav a:focus,
-    nav a:active {
-        font-size: 14px;
-        padding: 12px 10px;
-    }
-    
-    /* Original section nav adjustments */
+    /* Section nav adjustments */
     .section-nav ul {
         flex-direction: column;
+        align-items: center;
     }
     
     .section-nav li {
         margin: 5px 0;
+        width: 100%;
+    }
+    
+    .nav-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .footer {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .footer-button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
     }
     
     .nav-container {
-        width: 80%;
+        width: 100%;
     }
 }
-

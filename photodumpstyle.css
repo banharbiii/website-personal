@@ -118,19 +118,34 @@ header p {
     bottom: 0;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: right;
-    padding: 10px 0;
-    margin-top: 20px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+.footer {
+    margin-top: 30px;
+    text-align: right; /* Align all content to the right */
+    width: 100%; /* Ensure it spans full width */
+    padding: 10px 0; /* Add some padding */
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+.footer-buttons {
+    display: inline-block; /* Contain the buttons */
 }
+
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px; /* Change from margin-right to margin-left */
+}
+
+.footer-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
 
 .container {
     width: 80%;
@@ -207,28 +222,7 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.footer {
-    margin-top: 30px;
-    text-align: right;
-}
 
-.footer-button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: right;
-    color: white;
-    background-color: navy;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-right: 10px;
-}
-
-.footer-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
 .nav-container {
     position: sticky;
     top: 0;

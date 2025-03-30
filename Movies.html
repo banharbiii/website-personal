@@ -6,36 +6,6 @@
   <title>My Kind of Film</title>
   <link rel="stylesheet" href="MoviesStyle.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    .movie-details {
-      background-color: #f8f9fa;
-      padding: 15px;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .cast-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin: 10px 0;
-    }
-    .cast-member {
-      text-align: center;
-      width: 80px;
-    }
-    .cast-member img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .awards {
-      background-color: #fff3cd;
-      padding: 10px;
-      border-left: 4px solid #ffc107;
-      margin: 10px 0;
-    }
-  </style>
 </head>
 <body>
   <div class="nav-container">
@@ -43,47 +13,47 @@
         <ul>
             <li>
                 <a href="Biography.html">
-                    <i class="fa-solid fa-book-atlas"></i> Biography
+                    <i></i> Biography
                 </a>
             </li>
             <li>
                 <a href="Skills.html">
-                    <i class="fa-solid fa-code"></i> Skills
+                    <i></i> Skills
                 </a>
             </li>
             <li>
                 <a href="Resume.html">
-                    <i class="fa-solid fa-file"></i> Resume
+                    <i></i> Resume
                 </a>
             </li>
             <li>
                 <a href="photodump.html">
-                    <i class="fa-solid fa-images"></i> Photo Gallery
+                    <i></i> Photo Gallery
                 </a>
             </li>
             <li>
                 <a href="Media.html">
-                    <i class="fa-solid fa-music"></i> My Beat
+                    <i></i> My Beat
                 </a>
             </li>
             <li>
                 <a href="Movies.html">
-                    <i class="fa-solid fa-film"></i> My Kind of Movies
+                    <i></i> My Kind of Movies
                 </a>
             </li>
             <li>
               <a href="TVshows.html">
-                  <i class="fa-solid fa-film"></i> My Kind of TV Shows
+                  <i></i> My Kind of TV Shows
               </a>
           </li>
             <li>
                 <a href="Places.html">
-                    <i class="fa-solid fa-location-dot"></i> Dream Places
+                    <i></i> Dream Places
                 </a>
             </li>
             <li>
                 <a href="Bucketlist.html">
-                    <i class="fa-solid fa-fill"></i> Bucket List
+                    <i></i> Bucket List
                 </a>
             </li>
         </ul>
@@ -91,7 +61,6 @@
 </div>
   <header>
     <h1>My Kind of Movies</h1>
-  
   </header>
 
   <div class="container">
@@ -101,9 +70,19 @@
       
       <!-- Black Panther -->
       <div class="video-item">
-        <h3>1. Black Panther (2018)</h3>
-        <p>Genre: Sci-Fi, Action, Superhero | Director: Ryan Coogler | Release Date: February 16, 2018</p>
-        <iframe width="100%" height="315" src="Marvel Studios  Black Panther - Official Trailer.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="movie-header">
+          <div class="movie-poster">
+            <a href="Black panther picture.jpg" target="newSpace">
+              <img src="Black panther picture.jpg" alt="Black Panther Poster">
+            </a>
+          </div>
+          <div class="movie-title">
+            <h3>1. Black Panther (2018)</h3>
+            <p>Genre: Sci-Fi, Action, Superhero | Director: Ryan Coogler | Release Date: February 16, 2018</p>
+          </div>
+        </div>
+        
+        <iframe width="100%" height="315" src="Marvel Studios  Black Panther - Official Trailer.mp4" frameborder="0" allow="accelerometer; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         <div class="movie-details">
           <h4>Plot Summary:</h4>
@@ -112,19 +91,27 @@
           <h4>Main Cast:</h4>
           <div class="cast-list">
             <div class="cast-member">
-              <img src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg" alt="Chadwick Boseman">
+              <a href="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg" target="newSpace">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg" alt="Chadwick Boseman">
+              </a>
               <p>Chadwick Boseman</p>
             </div>
             <div class="cast-member">
-              <img src="https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_.jpg" alt="Michael B. Jordan">
+              <a href="https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_.jpg" target="newSpace">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_.jpg" alt="Michael B. Jordan">
+              </a>
               <p>Michael B. Jordan</p>
             </div>
             <div class="cast-member">
-              <img src="../IMAGES/lupitang nyong o.jpg" alt="Lupita Nyong'o">
+              <a href="lupitang nyong o.jpg" target="newSpace">
+                <img src="lupitang nyong o.jpg" alt="Lupita Nyong'o">
+              </a>
               <p>Lupita Nyong'o</p>
             </div>
             <div class="cast-member">
-              <img src="https://m.media-amazon.com/images/M/MV5BMTY5NTYyMjAzNV5BMl5BanBnXkFtZTcwNTg2NjA2NQ@@._V1_.jpg" alt="Danai Gurira">
+              <a href="https://m.media-amazon.com/images/M/MV5BMTY5NTYyMjAzNV5BMl5BanBnXkFtZTcwNTg2NjA2NQ@@._V1_.jpg" target="newSpace">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY5NTYyMjAzNV5BMl5BanBnXkFtZTcwNTg2NjA2NQ@@._V1_.jpg" alt="Danai Gurira">
+              </a>
               <p>Danai Gurira</p>
             </div>
           </div>
@@ -146,9 +133,19 @@
       
       <!-- Spider-Man: No Way Home -->
       <div class="video-item">
-        <h3>2. Spider-Man: No Way Home (2021)</h3>
-        <p>Genre: Action, Sci-fi, Superhero | Director: Jon Watts | Release Date: December 17, 2021</p>
-        <iframe width="100%" height="315" src="SPIDER-MAN_ NO WAY HOME - Official Teaser Trailer (HD).mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="movie-header">
+          <div class="movie-poster">
+            <a href="no way home.jpg" target="newSpace">
+              <img src="no way home.jpg" alt="Spider-Man: No Way Home Poster">
+            </a>
+          </div>
+          <div class="movie-title">
+            <h3>2. Spider-Man: No Way Home (2021)</h3>
+            <p>Genre: Action, Sci-fi, Superhero | Director: Jon Watts | Release Date: December 17, 2021</p>
+          </div>
+        </div>
+        
+        <iframe width="100%" height="315" src="SPIDER-MAN_ NO WAY HOME - Official Teaser Trailer (HD).mp4" frameborder="0" allow="accelerometer; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         <div class="movie-details">
           <h4>Plot Summary:</h4>
@@ -157,19 +154,27 @@
           <h4>Main Cast:</h4>
           <div class="cast-list">
             <div class="cast-member">
-              <img src="https://m.media-amazon.com/images/M/MV5BNzZiNTEyNTItYjNhMS00YjI2LWIwMWQtZmYwYTRlNjMyZTJjXkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_.jpg" alt="Tom Holland">
+              <a href="https://m.media-amazon.com/images/M/MV5BNzZiNTEyNTItYjNhMS00YjI2LWIwMWQtZmYwYTRlNjMyZTJjXkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_.jpg" target="newSpace">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzZiNTEyNTItYjNhMS00YjI2LWIwMWQtZmYwYTRlNjMyZTJjXkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_.jpg" alt="Tom Holland">
+              </a>
               <p>Tom Holland</p>
             </div>
             <div class="cast-member">
-              <img src="zendaya.jpg" alt="Zendaya">
+              <a href="zendaya.jpg" target="newSpace">
+                <img src="zendaya.jpg" alt="Zendaya">
+              </a>
               <p>Zendaya</p>
             </div>
             <div class="cast-member">
-              <img src="benedict cumberbatch.jpg" alt="Benedict Cumberbatch">
+              <a href="benedict cumberbatch.jpg" target="newSpace">
+                <img src="benedict cumberbatch.jpg" alt="Benedict Cumberbatch">
+              </a>
               <p>Benedict Cumberbatch</p>
             </div>
             <div class="cast-member">
-              <img src="jacob batalon.jpg" alt="Jacob Batalon">
+              <a href="jacob batalon.jpg" target="newSpace">
+                <img src="jacob batalon.jpg" alt="Jacob Batalon">
+              </a>
               <p>Jacob Batalon</p>
             </div>
           </div>
@@ -191,14 +196,11 @@
           <p>This film marks the first time different cinematic versions of Spider-Man appear together in live-action, bringing together 20 years of Spider-Man movies.</p>
         </div>
       </div>
-      
-      <!-- Add more movies here following the same structure -->
     </div>
-  </div>
-  
-  <div class="footer">
-    <a href="#top" class="footer-button">Go Top</a>
-    <a href="index.html" class="footer-button">Home</a>
+    <div class="footer">
+      <a href="#top" class="footer-button">Go Top</a>
+      <a href="index.html" class="footer-button">Home</a>
+    </div>
   </div>
 </body>
 </html>
